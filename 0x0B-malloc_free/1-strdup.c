@@ -12,7 +12,7 @@
 char *_strdup(char *str)
 {
 char *new_str;
-int len = 0;
+int len = 0, i;
 
 if (str == NULL)
 return (NULL);
@@ -28,7 +28,7 @@ if (new_str == NULL)
 return (NULL);
 
 /* Copy the string into the new memory location */
-for (int i = 0; i <= len; i++)
+for (i = 0; i <= len; i++)
 new_str[i] = str[i];
 
 return (new_str);
